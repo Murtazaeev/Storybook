@@ -11,3 +11,17 @@ export const Secondary = () => <Button variant='secondary'>Secondary</Button>
 export const Succes = () => <Button variant='succes'>Succes</Button>
 export const Danger = () => <Button variant='denger'>Danger</Button>
 // this is a comment
+
+const Template = args => <Button {...args} />
+
+export const PrimaryA = Template.bind({})
+PrimaryA.args = {
+    variant: 'primary',
+    children: 'Primary Args'
+}
+
+export const SecondaryA = Template.bind({})
+SecondaryA.args = {
+    variant: 'secondary',
+    children: 'Secondary Args'
+}
